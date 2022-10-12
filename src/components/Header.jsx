@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import { signIn, signOut, useSession } from 'next-auth/react'
 import {
   MenuIcon,
   SearchIcon,
@@ -30,7 +31,7 @@ const Header = () => {
         </div>
 
         <div className='flex items-center text-white text-xs space-x-6 mx-6'>
-          <div className='link'>
+          <div className='link' onClick={signIn}>
             <p>Hello, Brandon Stone!</p>
             <p className='font-extrabold md:text-sm'>Account & Lists</p>
           </div>
