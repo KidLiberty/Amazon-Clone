@@ -4,21 +4,26 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "stripe": "stripe listen --forward-to localhost:3000/api/webhook"
   },
   "dependencies": {
     "@heroicons/react": "v1",
     "@reduxjs/toolkit": "1.5.0",
+    "@stripe/stripe-js": "^1.41.0",
     "@tailwindcss/line-clamp": "^0.2.0",
+    "axios": "^1.1.2",
     "firebase": "^9.12.0",
-    "firebase-admin": "^9.8.0",
+    "firebase-admin": "^11.1.0",
+    "micro": "^9.4.1",
     "next": "latest",
     "next-auth": "^4.13.0",
     "react": "17.0.1",
     "react-currency-formatter": "^1.1.0",
     "react-dom": "17.0.1",
     "react-redux": "7.2.2",
-    "react-responsive-carousel": "^3.2.23"
+    "react-responsive-carousel": "^3.2.23",
+    "stripe": "^10.13.0"
   },
   "license": "MIT",
   "devDependencies": {
