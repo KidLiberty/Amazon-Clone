@@ -22,18 +22,18 @@ export default async (req, res) => {
         shipping_rate_data: {
           type: 'fixed_amount',
           fixed_amount: {
-            amount: 0,
+            amount: 699,
             currency: 'usd'
           },
-          display_name: 'Free shipping',
+          display_name: 'Expedited Shipping',
           delivery_estimate: {
             minimum: {
               unit: 'business_day',
-              value: 5
+              value: 1
             },
             maximum: {
               unit: 'business_day',
-              value: 7
+              value: 3
             }
           }
         }
@@ -42,10 +42,10 @@ export default async (req, res) => {
         shipping_rate_data: {
           type: 'fixed_amount',
           fixed_amount: {
-            amount: 1500,
+            amount: 1499,
             currency: 'usd'
           },
-          display_name: 'Next day air',
+          display_name: 'Next Day Air',
           delivery_estimate: {
             minimum: {
               unit: 'business_day',
